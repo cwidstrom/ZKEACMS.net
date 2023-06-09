@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Alipay.AopSdk.AspnetCore</id>
+    <version>2.2.7</version>
+    <authors>stulzq</authors>
+    <owners>stulzq</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/stulzq/Alipay.AopSdk.Core/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/stulzq/Alipay.AopSdk.Core</projectUrl>
+    <iconUrl>https://www.alipay.com/favicon.ico</iconUrl>
+    <description>支付宝（Alipay）服务端SDK AopSdk，ASP.NET Core支持。</description>
+    <releaseNotes>添加快捷配置的方法</releaseNotes>
+    <copyright>Copyright 2017-2018 stulzq</copyright>
+    <tags>Alipay,AopSdk,支付宝服务端SDK,支付宝支付</tags>
+    <repository type="git" url="https://github.com/stulzq/Alipay.AopSdk.Core" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Alipay.AopSdk.Core" version="2.2.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="2.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

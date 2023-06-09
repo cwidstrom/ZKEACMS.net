@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Parlot</id>
+    <version>0.0.24</version>
+    <title>Parser combinator for .NET</title>
+    <authors>Sebastien Ros</authors>
+    <license type="expression">BSD-3-Clause</license>
+    <licenseUrl>https://licenses.nuget.org/BSD-3-Clause</licenseUrl>
+    <projectUrl>https://github.com/sebastienros/parlot</projectUrl>
+    <description>Parlot is a fast, lightweight and simple to use .NET parser combinator.</description>
+    <copyright>Sebastien Ros</copyright>
+    <tags>parser interpreter</tags>
+    <repository type="git" url="https://github.com/sebastienros/parlot" commit="233cc6972ab569a8be997ea37224813ed4fcd181" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Memory" version="4.5.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+</package>

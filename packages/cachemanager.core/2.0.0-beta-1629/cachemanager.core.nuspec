@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>CacheManager.Core</id>
+    <version>2.0.0-beta-1629</version>
+    <authors>MichaConrad</authors>
+    <owners>MichaConrad</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/MichaCo/CacheManager/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://cachemanager.michaco.net/</projectUrl>
+    <iconUrl>http://cachemanager.michaco.net/favicon-128.png</iconUrl>
+    <description>CacheManager is an open source caching abstraction layer for .NET written in C#. It supports various cache providers and implements many advanced features. The Core library contains all base interfaces and tools. You should install at least one other CacheManager package to get cache handle implementations.</description>
+    <releaseNotes>https://github.com/MichaCo/CacheManager/issues/221</releaseNotes>
+    <copyright>Copyright (c) 2017 MichaConrad</copyright>
+    <tags>Caching Cache CacheManager Distributed Cache StackExchange Redis Memcached</tags>
+    <repository type="git" url="https://github.com/MichaCo/CacheManager" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Configuration.ConfigurationManager" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.PerformanceCounter" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

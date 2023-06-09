@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Fluid.Core</id>
+    <version>2.3.1</version>
+    <title>Fluid Template Engine</title>
+    <authors>Sebastien Ros</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>logo_64x64.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/sebastienros/fluid</projectUrl>
+    <description>Fluid is a template engine based on the Liquid markup, with focus on performance and .NET programming patterns.</description>
+    <copyright>Sebastien Ros</copyright>
+    <tags>fluid liquid template view engine</tags>
+    <repository type="git" url="https://github.com/sebastienros/fluid" commit="934e3958359c5b3a035e6c25392662d6a25518de" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.Extensions.FileProviders.Abstractions" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Parlot" version="0.0.24" exclude="Build,Analyzers" />
+        <dependency id="TimeZoneConverter" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="Microsoft.Extensions.FileProviders.Abstractions" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Parlot" version="0.0.24" exclude="Build,Analyzers" />
+        <dependency id="TimeZoneConverter" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.Extensions.FileProviders.Abstractions" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Parlot" version="0.0.24" exclude="Build,Analyzers" />
+        <dependency id="TimeZoneConverter" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net7.0">
+        <dependency id="Microsoft.Extensions.FileProviders.Abstractions" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Parlot" version="0.0.24" exclude="Build,Analyzers" />
+        <dependency id="TimeZoneConverter" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.CSharp" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.FileProviders.Abstractions" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Parlot" version="0.0.24" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="5.0.2" exclude="Build,Analyzers" />
+        <dependency id="TimeZoneConverter" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Microsoft.CSharp" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.FileProviders.Abstractions" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Parlot" version="0.0.24" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="5.0.2" exclude="Build,Analyzers" />
+        <dependency id="TimeZoneConverter" version="6.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
