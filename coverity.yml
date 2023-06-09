@@ -1,0 +1,16 @@
+capture:
+  build:
+    #clean-command: mvn -B clean
+    clean-command: mvn -version
+    build-command: mvn -B -DskipTests package   
+
+analyze:
+  aggressiveness-level: high
+  checkers:
+    all: true
+    audit: true
+    android-security: true
+    c-family-security: true
+    webapp-security:
+      aggressiveness-level: high
+  cov-analyze-args: [ --enable-audit-dataflow ]
