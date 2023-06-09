@@ -1,8 +1,7 @@
 capture:
   build:
     #clean-command: mvn -B clean
-    clean-command: mvn -version
-    build-command: mvn -B -DskipTests package   
+    build-command: dotnet build --configuration Release --no-restore   
 
 analyze:
   aggressiveness-level: high
