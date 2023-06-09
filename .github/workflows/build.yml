@@ -19,30 +19,12 @@ jobs:
         dotnet-version: '7.0.x'
     - name: Install dependencies
       run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Test EasyFrameWork
-      working-directory: ./test/EasyFrameWork.Test
-      run: dotnet test
-    - name: Install tools
-      run: |
-        dotnet tool install --global ZKEACMS.Publisher
-        dotnet tool install --global sqlite-exec
-    - name: Publish
-      working-directory: ./src/ZKEACMS.WebHost
-      run: publish-zkeacms
-    - name: Create database
-      run: |
-        mkdir ./src/ZKEACMS.WebHost/bin/Release/PublishOutput/App_Data
-        sqlite-exec -d ./src/ZKEACMS.WebHost/bin/Release/PublishOutput/App_Data/Database.sqlite -f ./Database/SQLite/ZKEACMS.sqlite.sql
-        cp -f ./Database/SQLite/appsettings.json ./src/ZKEACMS.WebHost/bin/Release/PublishOutput/appsettings.json
-    - name: Archive cms application
-      uses: actions/upload-artifact@v2
+    - name: Synopsys Action
+      uses: synopsys-sig/synopsys-action@v1.2.0
       with:
-        name: Application
-        path: ./src/ZKEACMS.WebHost/bin/Release/PublishOutput
-    - name: Archive cms database
-      uses: actions/upload-artifact@v2
-      with:
-        name: Database
-        path: ./Database
+        coverity_url: ${{ secrets.COVERITY_URL }}
+        coverity_user: ${{ secrets.COVERITY_USER }}
+        coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
+        coverity_project_name: "ZKEACMS"
+        coverity_stream_name: "ZKEACMS"
+    
